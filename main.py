@@ -228,7 +228,7 @@ def onmessage(update,bot:ObigramClient):
         tl_admin_user = os.environ.get('tl_admin_user','nautaii')
 
         #Descomentar debajo solo si se ba a poner el usuario admin de telegram manual
-        #tl_admin_user = 'nautaii'
+        tl_admin_user = 'topwin5'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -803,7 +803,7 @@ def main():
     bot_token = os.environ.get('bot_token')
     print('init bot.')
     #set in debug
-    #bot_token = '5723785621:AAFURbokdUPbEgE6RDATI0YsAHtwCzlObUY'
+    #bot_token = '5717276684:AAFvlkOnuL1RXBBARwFHapsNebBqOllpwP8'
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
     bot.onCallbackData('/cancel ',cancel_task)
